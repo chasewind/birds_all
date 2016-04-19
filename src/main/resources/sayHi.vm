@@ -1,0 +1,27 @@
+$welcome, ${welcome},
+以下是这次中奖邀请码，快快发挥你的洪荒之力传播吧，我们将根据您的传播次数进行排名
+#foreach($elem in $randList)
+$velocityCount	$elem 
+#end
+#set($nums=[-2 .. 2])
+#foreach($i in $nums)
+    $i
+#end
+$userName,hello
+$!userName,hello
+##
+
+#set($outer=[1..5])
+#set($inner=[102..107])
+#foreach($i in $outer)
+outer:	$i outer cnt:$velocityCount
+#set($small=0)
+#foreach($k in $inner)
+	#set($small = $small +1)
+	$small	$k inner cnt:$velocityCount
+#end
+#end
+##
+#set($cnt=$randList.size())
+list size:$cnt
+
