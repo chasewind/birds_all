@@ -44,6 +44,7 @@ public class TreeMain {
                     List<TreeNode> children = node.getChildren();
                     if (children == null) {
                         children = new ArrayList<TreeNode>();
+                        node.setChildren(children);
                     }
                     children.add(inner);
                 }
